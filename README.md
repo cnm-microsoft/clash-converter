@@ -1,19 +1,22 @@
-
-
-
-          
-好的，我已经根据您的项目结构和现有信息，重新编写了 `README.md` 文件，并优化了排版。
-
-这是新的 `README.md` 内容：
-
-```markdown:d:\Github\git\clash-converter\README.md
 # Clash Converter
 
-[![Go Version](https://img.shields.io/badge/Go-1.20+-blue.svg)](https://golang.org/)
+[![Go Version](https://img.shields.io/badge/Go-1.24+-blue.svg)](https://golang.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Docker Build](https://github.com/cnm-microsoft/clash-converter/actions/workflows/docker-build.yml/badge.svg)](https://github.com/cnm-microsoft/clash-converter/actions/workflows/docker-build.yml)
 
 Clash Converter 是一个灵活的 Clash 订阅转换工具，允许用户通过自定义 JavaScript 脚本和 YAML 模板来处理和转换 Clash 配置文件。
+
+## 目录
+- [✨ 功能特性](#功能特性)
+- [📂 项目结构](#项目结构)
+- [🚀 开始使用](#开始使用)
+- [🛠️ 环境变量](#环境变量)
+- [⚙️ API 使用](#api-使用)
+- [🔧 自定义脚本 (`script.js`)](#自定义脚本-scriptjs)
+- [📄 自定义模板 (`template.yaml`)](#自定义模板-templateyaml)
+- [🔄 GitHub Actions](#github-actions)
+- [🤝 贡献](#贡献)
+- [📜 许可证](#许可证)
 
 ## ✨ 功能特性
 
@@ -60,7 +63,7 @@ clash-converter/
 
 ### 依赖环境
 
-*   Go 1.20+ (用于本地构建)
+*   Go 1.24+ (用于本地构建)
 *   Docker (用于容器化部署)
 
 ### 1. 从源码构建和运行
@@ -232,8 +235,5 @@ external-controller: '0.0.0.0:9090'
 ## 📜 许可证
 
 本项目采用 [MIT License](LICENSE) 开源。
-```
-
-您可以将以上内容复制并替换到您项目中的 `README.md` 文件。这个版本包含了更详细的说明、使用方法、API 描述以及对自定义脚本和模板的解释，排版也进行了优化。
 
         
