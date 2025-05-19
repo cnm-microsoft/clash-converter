@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clash-Converter</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Clash-Converter</h1>
+            <p>Clash 订阅转换工具</p>
+        </header>
+        
+        <main>
+            <div class="card">
+                <h2>订阅转换</h2>
+                <form id="convertForm">
+                    <div class="form-group">
+                        <label for="sub">订阅地址</label>
+                        <input type="text" id="sub" name="sub" placeholder="输入订阅地址" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="script">脚本地址</label>
+                        <input type="text" id="script" name="script" placeholder="输入脚本地址">
+                        <small>默认使用示例脚本</small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="template">模板地址</label>
+                        <input type="text" id="template" name="template" placeholder="输入模板地址">
+                        <small>默认使用示例模板</small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="token">访问令牌</label>
+                        <input type="password" id="token" name="token" placeholder="输入访问令牌" required>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="btn primary">转换</button>
+                        <button type="button" class="btn" id="copyBtn" disabled>复制结果</button>
+                        <button type="button" class="btn" id="downloadBtn" disabled>下载配置</button>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="card result-card" id="resultCard" style="display: none;">
+                <h2>转换结果</h2>
+                <pre id="resultContent"></pre>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Clash-Converter &copy; 2024</p>
+        </footer>
+    </div>
+    
+    <script src="/js/main.js"></script>
+</body>
+</html>
